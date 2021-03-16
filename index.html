@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+
+    <!----- css links ------>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <div class="facebook icon">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="twitter icon">
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <div class="google icon">
+                    <i class="fab fa-google-plus-g"></i>
+                </div>
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" placeholder="Username" class="input-field" required>
+                <input type="password" placeholder="Password" class="input-field" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+            <form id="register" class="input-group">
+                <input type="text" placeholder="Username" class="input-field" required>
+                <input type="email" placeholder="Email" class="input-field" required>
+                <input type="password" placeholder="Password" class="input-field" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+        var x = document.getElementById('login');
+        var y = document.getElementById('register');
+        var z = document.getElementById('btn');
+
+        function register(){
+            x.style.left = "-400px";
+            y.style.left = "80px";
+            z.style.left = "110px";
+        }  
+        function login(){
+            x.style.left = "80px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+    </script>
+
+    <script src="https://kit.fontawesome.com/41f4b82f29.js" crossorigin="anonymous"></script>
+</body>
+</html>
